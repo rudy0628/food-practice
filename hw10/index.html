@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>一起吃食去</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #ffe5b3;
+  }
+  .fakeimg img{
+    height:200px;
+	weight:200px;
+  }
+  .nav.nav-tabs{
+    float: left;
+    display: block;
+  }
+  
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 50%;
+      height: 50vh;
+	  margin-left: auto;
+      margin-right: auto;
+	  display:block;
+  }
+  body{
+    font-family: Microsoft JhengHei;
+  }
+  .jumbotron{
+    background-image:url('./img/food.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: cover;
+  }
+  </style>
+</head>
+<body>
+
+<!--標頭  -->
+<div class="jumbotron text-center" >
+
+  <h1>&#127835 &#127836 &#127837半夜不要開&#127839 &#127844 &#127847</h1>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+	<li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/臭豆腐.jpg" alt="台式" width="100%">
+	  <div class="carousel-caption">
+        <h3>台式</h3>
+        <p>香酥臭豆腐</p>
+      </div>   
+    </div>
+    <script>
+	var country=['日式','韓式','美式'];
+	var food = ['唐揚雞塊','韓式炸雞','肋眼牛排'];
+	var foodjpg = ['./img/唐揚雞塊.jpg','./img/韓式炸雞.jpg','./img/肋眼牛排.jpg'];
+	  for(var j=0;j<3;j++)
+	  {
+	     document.write('<div class="carousel-item">');
+		   document.write('<img src="'+foodjpg[j]+'" alt="'+country[j]+'" width="100%">');
+		   document.write('<div class="carousel-caption">');
+		     document.write('<h3>'+country[j]+'</h3>');
+			 document.write('<p>'+food[j]+'</p>');
+		   document.write('</div>');
+		 document.write('</div>');
+	  }
+	</script>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+
+<!-- 內容 -->
+<!-- navbar  -->
+<nav class="navbar navbar-expand-sm  navbar-dark  bg-info text-white sticky-top" >
+  <a class="navbar-brand" href="index.html">食物</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+	  <script>
+	    var navfood = ['','台式','日式','韓式','美式']
+	    for(var i=1;i<5;i++)
+	    {
+	      document.write('<li class="nav-item">');
+	        document.write('<a class="nav-link" href="hw10-'+i+'.html"  target="adv" rel="noopener">'+navfood[i]+'</a>');
+	      document.write('</li>');
+	    }
+	  </script>
+      <li>
+	     <p>查詢更多美食</p>
+      </li>   	  
+	  <li>
+	    <script async src="https://cse.google.com/cse.js?cx=011092997744860944191:scvvx0dmbir"></script>
+		<div class="gcse-searchbox-only"></div>
+	  </li>
+    </ul>
+  </div> 
+</nav>
+
+<!-- 內容-->
+<div >
+    <iframe name='adv' src='hw10-1.html' height='800' width='100%' frameborder=0></iframe>
+</div>
+
+<!-- 頁尾footer -->
+<div class="jumbotron bg-light text-dark-50 text-center" style="margin-bottom:0">
+  <p>copyright@2020 C107193126</p>
+</div>
+
+</body>
+</html>

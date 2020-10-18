@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>一起吃食去</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+	  margin:0; padding:0;
+	  background-image:url('./img/cardbg.png');
+	  background-repeat:no-repeat;
+	  background-position:center;
+	  background-size: cover;
+	  font-family: Microsoft JhengHei;
+	}
+	::-webkit-scrollbar {
+     width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 20px;
+      margin:0px 0 5px 0;
+    }
+    ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      background: rgb(219,219,219);
+    }
+  </style>
+</head>
+<body>
+<div class="row">
+  <script>
+    for(var i=0;i<3;i++)
+	{
+	  var cardfood = ['韓式炸雞','海鮮煎餅','韓式年糕'];
+	  document.write('<div class="col-sm-4">');
+		   document.write('<div class="card">');
+		     document.write('<div class="card-header">'+cardfood[i]+'</div>');
+		     document.write('<div class="card-body"><img src="./img/'+cardfood[i]+'.jpg" class="img-thumbnail mx-auto d-block" alt="Kaohsiung"></div> ');
+			 document.write('<div class="card-footer">評價:&#11088 &#11088 &#11088 &#11088 &#11088</div>');
+		   document.write('</div>');
+      document.write('</div>');
+	}
+  </script>
+</div>  
+<div class="row">
+  <script>
+    for(var i=0;i<2;i++)
+	{
+	  var cardfood = ['石鍋拌飯','泡菜起司鍋'];
+	  document.write('<div class="col-sm-4">');
+		   document.write('<div class="card">');
+		     document.write('<div class="card-header">'+cardfood[i]+'</div>');
+		     document.write('<div class="card-body"><img src="./img/'+cardfood[i]+'.jpg" class="img-thumbnail mx-auto d-block" alt="Kaohsiung"></div> ');
+			 document.write('<div class="card-footer">評價:&#11088 &#11088 &#11088 &#11088 &#11088</div>');
+		   document.write('</div>');
+      document.write('</div>');
+	}
+  </script>
+</div>  
+
+</body>
+</html>
